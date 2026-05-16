@@ -3966,3 +3966,9 @@ Entries:
       message: Fixed rule links not appearing
   id: 425
   time: '2026-05-16T08:09:53.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: Fixed ghosts seeing whisper obfuscation
+  id: 426
+  time: '2026-05-16T08:16:14.0000000+00:00'
