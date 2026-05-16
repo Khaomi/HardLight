@@ -3978,3 +3978,15 @@ Entries:
       message: Nullspace fixes, part 2
   id: 427
   time: '2026-05-16T08:17:27.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Fix
+      message: >-
+        Cloning either with a cloning pod or through the paradox clone event now
+        respects the target character's traits and custom height settings.
+    - type: Fix
+      message: >-
+        Spawning characters through the admin action now respects character
+        traits and custom height settings.
+  id: 428
+  time: '2026-05-16T17:09:25.0000000+00:00'
