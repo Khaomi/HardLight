@@ -4072,3 +4072,11 @@ Entries:
       message: Lowered prisoner station pay 20k -> 5k
   id: 438
   time: '2026-05-18T18:35:49.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Tweak
+      message: >-
+        Medical tracking implants now only execute emergency extractions when
+        the target is located on an expedition map.
+  id: 439
+  time: '2026-05-18T18:41:50.0000000+00:00'
