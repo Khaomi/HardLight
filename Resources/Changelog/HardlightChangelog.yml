@@ -4190,3 +4190,13 @@ Entries:
       message: The HoS cloak definitely wasn't red.
   id: 453
   time: '2026-05-21T11:06:42.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added RMC guns and armor
+    - type: Add
+      message: Added Bezoars to high tier Xenos
+    - type: Add
+      message: 'Added damage modifier system '
+  id: 454
+  time: '2026-05-21T19:32:39.0000000+00:00'
