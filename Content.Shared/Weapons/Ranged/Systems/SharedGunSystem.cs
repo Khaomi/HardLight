@@ -31,6 +31,7 @@ using Content.Shared.Weapons.Melee.Events;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Content.Shared.Whitelist;
+using Content.Shared._CM14.Weapons.Ranged;
 using Content.Shared._RMC14.Weapons.Ranged.Prediction;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Systems;
@@ -46,6 +47,7 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Goobstation.Common.Weapons.Multishot;
+using Content.Shared.Weapons.Ranged.Events;
 
 namespace Content.Shared.Weapons.Ranged.Systems;
 
@@ -117,6 +119,7 @@ public abstract partial class SharedGunSystem : EntitySystem
         SubscribeLocalEvent<GunComponent, CycleModeEvent>(OnCycleMode);
         SubscribeLocalEvent<GunComponent, HandSelectedEvent>(OnGunSelected);
         SubscribeLocalEvent<GunComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<GunDamageModifierComponent, AmmoShotEvent>(OnGunDamageModifierAmmoShot);
 
         _physQuery = GetEntityQuery<PhysicsComponent>(); // Mono
         _projQuery = GetEntityQuery<ProjectileComponent>(); // Mono
@@ -143,6 +146,17 @@ public abstract partial class SharedGunSystem : EntitySystem
         {
             component.NextFire = melee.NextAttack;
             EntityManager.DirtyField(uid, component, nameof(GunComponent.NextFire));
+        }
+    }
+
+    private void OnGunDamageModifierAmmoShot(Entity<GunDamageModifierComponent> ent, ref AmmoShotEvent args)
+    {
+        foreach (var projectile in args.FiredProjectiles)
+        {
+            if (!_projQuery.TryGetComponent(projectile, out var comp))
+                continue;
+
+            comp.Damage *= ent.Comp.Multiplier;
         }
     }
 
@@ -304,6 +318,13 @@ public abstract partial class SharedGunSystem : EntitySystem
         if (!gun.LockOnTargetBurst || !gun.BurstActivated) // Goob edit
             gun.Target = null;
         Dirty(uid, gun);
+
+        // If running on the server, notify clients to stop any lingering muzzle-flash animations/lights
+        if (_netManager.IsServer)
+        {
+            var stopEv = new StopMuzzleFlashEvent(GetNetEntity(uid));
+            RaiseNetworkEvent(stopEv, Filter.Pvs(uid, entityManager: EntityManager));
+        }
     }
 
     /// <summary>

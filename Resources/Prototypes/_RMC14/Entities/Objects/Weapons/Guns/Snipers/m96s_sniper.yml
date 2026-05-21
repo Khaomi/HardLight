@@ -183,7 +183,11 @@
   - type: Projectile
     damage:
       types:
+<<<<<<< HEAD
         Piercing: 60 # TODO RMC14 70 when aimed shot is in please someone help im dying
+=======
+        Piercing: 140 # TODO RMC14 70 when aimed shot is in please someone help im dying
+>>>>>>> 021619f2cb421212a875a41d98ea977c28eb987d
 
 
 - type: entity
@@ -195,7 +199,11 @@
   - type: Projectile
     damage:
       types:
+<<<<<<< HEAD
         Piercing: 55 # TODO RMC14 50 when aimed shot is in please someone help im dying
+=======
+        Piercing: 100 # TODO RMC14 50 when aimed shot is in please someone help im dying
+>>>>>>> 021619f2cb421212a875a41d98ea977c28eb987d
         Heat: 20 # TODO RMC14 10 when aimed shot is in please someone help im dying
 
 
@@ -221,7 +229,11 @@
   - type: Projectile
     damage:
       types:
+<<<<<<< HEAD
         Piercing: 66
+=======
+        Piercing: 125
+>>>>>>> 021619f2cb421212a875a41d98ea977c28eb987d
 
 
 - type: Tag
