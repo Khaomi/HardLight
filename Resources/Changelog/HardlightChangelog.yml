@@ -4414,3 +4414,9 @@ Entries:
       message: Document paper can fill printers
   id: 466
   time: '2026-05-28T21:55:35.0000000+00:00'
+- author: Fasuh
+  changes:
+    - type: Fix
+      message: Fixed Anaconda gun needing ammo and not self recharging.
+  id: 467
+  time: '2026-05-29T03:05:57.0000000+00:00'
