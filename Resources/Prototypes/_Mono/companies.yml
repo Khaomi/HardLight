@@ -308,8 +308,10 @@
   form: Antagonist
   name: Gorlex Marauders
   color: "#880808" # blood red
-  disabled: true # locked because literally nukies
-
+  disabled: true # GLORY TO THE LOKI DIVISION.
+  logins:
+  - KillSwitch
+  
 - type: company
   id: AID
   form: Protagonist
