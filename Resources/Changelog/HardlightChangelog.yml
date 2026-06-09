@@ -4584,3 +4584,13 @@ Entries:
         delay.
   id: 486
   time: '2026-06-09T17:59:12.0000000+00:00'
+- author: bendonji
+  changes:
+    - type: Add
+      message: >-
+        Resomi now have new noises for coughing, yawning, sighing and gasping.
+        No more weird hooman noises!
+    - type: Fix
+      message: Resomi can now sound like sad little birds when they die. Less exciting.
+  id: 487
+  time: '2026-06-09T17:59:30.0000000+00:00'
