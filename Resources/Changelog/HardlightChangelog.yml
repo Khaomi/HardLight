@@ -4884,3 +4884,11 @@ Entries:
         explode the server with this power
   id: 523
   time: '2026-06-18T10:57:25.0000000+00:00'
+- author: Notarin
+  changes:
+    - type: Add
+      message: Added the addressed telepathy psionic power.
+    - type: Tweak
+      message: Gave the mantis the addressed telepathy psionic power
+  id: 524
+  time: '2026-06-18T10:57:46.0000000+00:00'
