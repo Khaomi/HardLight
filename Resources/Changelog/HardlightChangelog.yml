@@ -4945,3 +4945,15 @@ Entries:
         all of your docks manually
   id: 531
   time: '2026-06-19T09:46:49.0000000+00:00'
+- author: Petalpool
+  changes:
+    - type: Add
+      message: (Elkridge Depot) Pisoner wardrobe wall locker to perma
+    - type: Add
+      message: (Elkridge Depot) Bowl for prisoners in perma
+    - type: Tweak
+      message: >-
+        (Elkridge Depot) Cargo is no longer all access, and is instead, cargo
+        access.
+  id: 532
+  time: '2026-06-19T10:04:23.0000000+00:00'
