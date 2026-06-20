@@ -5005,3 +5005,9 @@ Entries:
       message: Even more bug fixes for the automated tests!
   id: 538
   time: '2026-06-20T05:18:47.0000000+00:00'
+- author: DrekkCuga
+  changes:
+    - type: Fix
+      message: Fixed so many construction issues
+  id: 539
+  time: '2026-06-20T05:19:10.0000000+00:00'
