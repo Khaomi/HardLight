@@ -5099,3 +5099,12 @@ Entries:
       message: The ability for Brighteyes to be Revolutionary.
   id: 550
   time: '2026-06-21T07:04:11.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: >-
+        Fixed harpies racial modifiers not correctly applying, they will now be
+        correctly poisoned by allicin and theobromine, and breathe twice as fast
+        compared to humans.
+  id: 551
+  time: '2026-06-21T07:05:04.0000000+00:00'
