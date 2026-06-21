@@ -5114,3 +5114,11 @@ Entries:
       message: Vinyls can now be stored in bluespace bookshelves.
   id: 552
   time: '2026-06-21T07:07:11.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Added leap to speed legs '
+    - type: Tweak
+      message: Changed the way that Speed boots and legs function
+  id: 553
+  time: '2026-06-21T08:40:40.0000000+00:00'
