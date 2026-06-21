@@ -5063,3 +5063,11 @@ Entries:
       message: Changed the limiter on asteroid spawns, space feels populated now
   id: 546
   time: '2026-06-21T04:50:51.0000000+00:00'
+- author: re-silvered
+  changes:
+    - type: Fix
+      message: >-
+        Fixed cnc ooc preference icons being visible when characters were
+        otherwise stealthed.
+  id: 547
+  time: '2026-06-21T04:56:04.0000000+00:00'
